@@ -1,0 +1,314 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    /* background-color: black; */
+    color: white;
+    overflow: hidden; /*   whenever the content overflows, we dont need the scroll option here thats why 'hidden' , if u want to scroll and see the rest of the content then use 'scroll or auto' */
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    margin-right: 0.5rem;
+    width: 320px;
+    border-radius: 1rem; /*1rem= 16px, we use rem bcs as the size of the screen dec., the size of the side bar alse dec., relatively*/
+}
+.main-content{
+    background-color:  #121212;
+    flex: 1; /*takes all the remaining spaces to itself*/
+    border-radius: 1rem;
+    overflow: auto;/*we want scroll bar only in main content*/
+    padding: 0 1.5rem 0 1.5rem; /*to add padding in left and right*/
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0; /*to make it stick to the bottom*/
+    width: 100%;
+    height: 65px;
+
+}
+a{
+    text-decoration: none;
+
+}
+.nav{
+    background-color:  #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;/*to bring the elements that got into same line bcs of display:flex to one below another*/
+    justify-content: center;/*to align the contents verticall center (along main axis)*/
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+}
+.nav-options{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.4rem 0.75rem; /*top|bottom   left|right*/
+}
+.nav-options .i{
+    font-size: 1.25rem;
+   
+}
+.nav-options a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-options:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between; /*to push the plus and arrow to the left corner*/
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+}
+.icons{
+    display: flex;
+    font-size: 1.25rem;
+    
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.icons i{ 
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin-top: 0.5rem;
+    margin-right: 4px;
+    margin-bottom: 0;
+    padding: 0.7rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+    line-height: 2rem;
+    width: fit-content;/*amt of width needed to fit the content is tsken*/
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 650;
+    margin-top: 0.4rem;
+    cursor: pointer;
+
+}
+.sticky-nav{
+    position: sticky;
+    background-color: #121212;
+    top:0;
+    display: flex;
+    justify-content: space-between; /*if u want to separate a set of icons to the left corner and to the right corner then
+                                     create 2 divs inside main div and style the main div as justify-content:space-between*/
+    align-items: center;/*aligns items vertically center*/
+    padding: 1rem 0 1rem 0;
+    z-index: 1; /*to hide the letters that are visible thru the sticky nav when scrolling, its done by putting nav on top using z index*/
+
+}
+
+.sticky-nav-icons {
+    margin-left: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+@media (max-width:1000px){
+    .hide {
+        display: none; /*to disappear the element from the screen*/
+    }
+}
+.card1{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.card-container{
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    /* height: 70%; */
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+.card-info{
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.card1:hover{
+    box-shadow: 0 0 20px whitesmoke;
+    
+}
+.footer{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+.music-player{
+    display: flex;
+}
+
+.album{
+    width: 25%;
+
+}
+.player{
+    width: 50%;
+    
+}
+.controls{
+    width: 25%;
+    
+}
+.player-control-icon{
+    height: 1rem; /*font-size for icons and height for img*/
+    margin-right: 1.8rem;
+    opacity: 0.7;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.player-control{
+    display: flex;
+    justify-content:center;
+    padding-top: 0.3rem;
+    align-items: center;
+    
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+#play-button{
+    height: 2rem;
+}
+#play-button:hover{
+    height: 2.15rem;
+}
+.progress-bar{
+    width: 60%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.15rem;
+    appearance: none;      /*   to remove the default styling of  an elt*/
+    background-color: transparent; 
+    cursor: pointer; /*on hovering, the hand appears*/
+    
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.progress-bar::-webkit-slider-runnable-track{  /*check quirksmode slider styling*/
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 4.8px
+}
+.curr-song img{
+    height: 3.3rem;
+    width: 3.3rem;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+.album{
+    display: flex;
+    justify-content: space-between;
+}
+.curr-song{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info1{
+    font-size: 15px;
+}
+.info2{
+    font-size: 11px;
+    opacity: 0.7;
+}
+.info{
+    padding: 0.7rem;
+}
+.album-icon {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.album-icon i{
+    margin-right: 0.8rem;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.album-icon i:hover{
+    opacity: 1;
+}
+.right-icon{
+    height: 100%;
+    width: 100%;
+}

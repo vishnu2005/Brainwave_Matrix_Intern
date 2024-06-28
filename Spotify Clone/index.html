@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone! </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav" id="nav" style="background-color: #121212;">
+                <div class="nav-options">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+
+                <div class="options">
+
+                    <div class="lib-options nav-options">  <!--  inorder to apply the same styling of nav-option div to lib-options dicv we add the class name of former here -->
+                        <img src="./assets/library_icon.png" >
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <br> <!-- not div bcs paragraph has a default spacing which is needed here -->
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <br>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box" style="height: 9.3rem;">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <br> <!-- not div bcs paragraph has a default spacing which is needed here -->
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <br>
+                        <button class="badge" style="margin-top: 0.2rem;">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png"/>
+                    <img src="./assets/forward_icon.png" class="hide"/>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item" style="background-color:black; color: white;">
+                        <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>
+                        Install App
+                    </button>
+                    <i class="fa-solid fa-user nav-item" style="background-color: black;"></i>
+                </div>
+            </div>
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card1">
+                        <img src="./assets/card1img.jpeg" class="card-img" >
+                        <h4 class="card-title">Top 50 - Global</h4>
+                        <br>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                        <br>
+                    </div>
+                </div>
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card1">
+                        <img src="./assets/card2img.jpeg" class="card-img" >
+                        <h4 class="card-title">Mahiye Jinha Sona</h4>
+                        <br>
+                        <p class="card-info">Darshan Rawal</p>
+                        <br>
+                    </div>
+                    <div class="card1">
+                        <img src="./assets/card3img.jpeg" class="card-img" >
+                        <h4 class="card-title">Mere Paas Tum Ho</h4>
+                        <br>
+                        <p class="card-info">Lofi mix</p>
+                        <br>
+                    </div>
+                    <div class="card1">
+                        <img src="./assets/card4img.jpeg" class="card-img" >
+                        <h4 class="card-title">Naa Ready(from "Leo")</h4>
+                        <br>
+                        <p class="card-info">Anirudh Ravichandar, Thalapathy Vijay</p>
+                        <br>
+                    </div>
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="card-container">
+                    <div class="card1">
+                        <img src="./assets/card5img.jpeg" class="card-img" >
+                        <h4 class="card-title">Top Songs - India</h4>
+                        <br>
+                        <p class="card-info">Your weekly updates of the most played tracks...</p>
+                        <br>
+                    </div>
+                    <div class="card1">
+                        <img src="./assets/card6img.jpeg" class="card-img" >
+                        <h4 class="card-title">Top Songs - India</h4>
+                        <br>
+                        <p class="card-info">Your weekly updates of the most played tracks...</p>
+                        <br>
+                    </div>
+                    <div class="card1">
+                        <img src="./assets/card1img.jpeg" class="card-img" >
+                        <h4 class="card-title">Top 50 - Global</h4>
+                        <br>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                        <br>
+                    </div>
+                  
+
+                </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>    
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="curr-song">
+                    <img src="./assets/card4img.jpeg" >
+                    <div class="info">
+                        <p class="info1">Naa Ready(from "Leo")</p>
+                        
+                        <p class="info2">Anirudh Ravichandar</p>
+                    </div>
+                </div>
+                <div class="album-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" id="play-button" style="opacity: 1; ">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00  </span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">  3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./assets/righticons.png" class="right-icon">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
